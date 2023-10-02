@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/* body */
+body {
+	align-items: center;
+	font-family: Arial, sans-serif;
+	background-color: #a0dae0;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+
+/* main */
+main {
+	width: auto;
+	padding: 17px;
+	background-color: #76b3bc;
+	border-radius: 10px;
+}
+
+
+/* topping columns */
+.topping-columns {
+	column-count: 2;
+}
+
+
+/* buttons */
+form input[type="submit"], form input[type="reset"] {
+	align-items: center;
+	padding: 12px;
+	background-color: #a0af4c;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+}
+
+
+.personal_text {
+	width: 68%;
+}
+
+
+/* Adding color to the background */
+nav ul {
+    background-color: #5367af;
+}
+
+/* Making it in one single line, side-by-side */
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Removing text-decoration and adding color to the links and making the area around them to be considered*/
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 12px 50px;
+    color: #fff;
+}
+
+/* Adding drop down with transition effects to expand*/
+nav ul ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2e45ab;
+    opacity: 0; 
+    transform: scaleY(0); 
+    transform-origin: top;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+}
+
+nav ul li:hover > ul {
+    opacity: 1; 
+    transform: scaleY(1);
+}
+
+/* Making the dropdown box the wider for the text to avoid line breaks */
+nav ul ul li {
+    width: 220px;
+}
+
+/* Change the color when hovered  */
+nav a:hover,
+nav a:focus {
+    background-color: #000751;
+}
+
+/* If visited then change the color to grey */
+nav a:visited {
+    color: #bcbcbf;
+}
+
+/* normally set white */
+nav a:link {
+    color: white;
+}
+
+/* if active then darker color background */
+nav a:active {
+    background-color: #15033f; 
+}
+
+
+/* Positioning the links */
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add style to the table like shadow, set min width, font size and add shadow  and margins*/ 
+table {
+    font-size: 0.83em;
+    font-family: sans-serif;
+	width: 100%;
+    min-width: 350px;
+	border-collapse: collapse;
+	margin: 15px 0px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.50);
+}
+
+/* Change the border of the table */ 
+table, th, td {
+	border: 1px solid #bbbbbb;
+}
+
+/* adding padding to the elements */
+th, td {
+	padding: 10px;
+}
+
+/* change bg of the heaader */
+th {
+	background-color: #8ee5b9e7;
+}
+
+/* change background of the even lines to grey */
+tr:nth-child(even) {
+	background-color: #e4e2e2;
+}
+
+/* change background of the odd lines to white */
+tr:nth-child(odd) {
+	background-color: #ffffff;
+}
