@@ -1,0 +1,390 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+header {
+    background: linear-gradient(to left, #76B900, #76B900, rgba(108, 106, 106, 0.811));
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 10px 6px 0px rgba(0,0,0,0.57);
+    z-index: 999;
+}
+
+.logo {
+    max-height: 150px;
+    margin-left: 5%;
+    filter: drop-shadow(3px 5px 8px rgb(0 0 0 / 0.6));
+}
+
+nav {
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    color: #fff; 
+    background-color: #2e6407; 
+    border-radius: 5px; 
+    position: relative;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.main {
+    background-image: url('../img/chip-index.jpg');
+    /* source of image https://www.forbes.com/sites/janakirammsv/2017/08/07/in-the-era-of-artificial-intelligence-gpus-are-the-new-cpus/?sh=8c174715d16e */ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.rtx-page {
+    background-image: url('../img/rtx-4090-product-bg.jpg');
+    /* source of image https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/ */ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+.contact-form-page {
+    background-image: url('../img/contact-form-bg.jpg');
+    /* source of image https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html */ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: hue-rotate(270deg);
+    z-index: -10;
+}
+
+
+.main-call {
+    text-align: center;
+    line-height: 2em;
+    padding: 50px;
+    background-color: #f0f0f0bc;
+}
+
+
+.second-call-about {
+    text-align: center;
+    line-height: 2em;
+    padding: 50px;
+    background-color: #f0f0f0bc;
+    transition: transform 0.3s ease;
+}
+
+.second-call-about:hover {
+    transform: scale(1.1);
+}
+
+.index-buttons {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b960d5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.index-buttons:hover {
+    
+    background-color: #a9b900d5;
+    color: white;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 30%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+    flex: 1;
+}
+
+.product:nth-child(1) {
+    background: linear-gradient(to right, rgba(72, 255, 0, 0.7), rgba(192, 192, 192, 0.7));
+}
+
+.product:nth-child(2) {
+    background: linear-gradient(to left, rgba(72, 255, 0, 0.7), rgba(192, 192, 192, 0.7));
+}
+
+.product-about {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 30%;
+    background-color: rgba(255, 255, 255, 0.687);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.9);
+    flex: 1;
+}
+
+.product img {
+    max-width: 45%;
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+}
+
+.reviews {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews h3 {
+    margin-bottom: 10px;
+}
+
+.reviews p {
+    margin: 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+}
+
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b960d5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes beat {
+    0% { transform: scale(0.8); }
+    10% { transform: scale(1); }
+    20% { transform: scale(1.15); }
+    35% { transform: scale(1.25); }
+    50% { transform: scale(1.5); }
+    75% { transform: scale(1.25); }
+    90% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.buy-button:hover {
+    animation: beat 0.6s infinite;
+}
+
+
+.image-gallery {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 20%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img:hover {
+    transform: scale(1.3);
+    transition: transform 0.3s ease;
+}
+
+.product-description fieldset {
+    text-align: justify;
+    max-width: 45%; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    background-color: #7bd5c063;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.product-description legend {
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-description fieldset:hover {
+    transform: scale(1.6);
+    background-color: #b9e9de;
+    transition: transform 0.3s ease;
+}
+
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.review-box {
+    width: 80%;
+    max-width: 300px; 
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px 20px 10px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px; 
+}
+
+.review-box img {
+    width: 30%;
+    height: auto;
+    border-right: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+}
+
+.review-content {
+    flex: 1;
+    padding: 15px;
+}
+
+.review-rating {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.review-text {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.review-box:hover {
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+
+.reviews fieldset {
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-submit {
+    background-color: #00b960d5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: hue-rotate(90deg);
+}
+
+#contact-submit:active {
+    transform: translateY(6px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
